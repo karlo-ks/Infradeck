@@ -32,5 +32,6 @@ The [README](../README.md) is the short version: what the project is, how to sta
 | [Development](development.md) | Running the backend and frontend without Docker, tests, project layout. |
 | [Database schema](database.md) | Tables, summarised history, indexes and migrations. |
 | [API overview](api.md) | Every endpoint, who may call it, and what it returns. |
+| [Versioning](versioning.md) | What major, minor and patch releases may contain, deprecation, collector compatibility and support. |
 | [../TESTS.md](../TESTS.md) | How the tests work, what they don't cover, and what each one checks. |
 | [../SECURITY.md](../SECURITY.md) | What every component can touch, and the limits of each protection. |
