@@ -28,7 +28,7 @@ services:
       retries: 5
 
   redis:
-    image: redis:7.4.12-alpine@sha256:c5d34a98396a4775e223c74e929162c35c5a2182901ba26b50ade939941ce14b
+    image: redis:7.4.12-alpine@sha256:7f7d30b7fdd09467bac58198a1f166dd69789d348d4fe859cccb20e0cf287fbe
     container_name: infradeck-redis
     restart: unless-stopped
     networks: [data]
@@ -301,7 +301,7 @@ services:
 
   # Optional public HTTPS entry point: docker compose --profile https up -d
   caddy:
-    image: caddy:2.11.9-alpine@sha256:0bbb055bda6793c999bde78b1b5ce3e89f829fb031af2cf50056ea1246559fee
+    image: caddy:2.11.9-alpine@sha256:003a97808e781aa9f7e75cc2f43d34d461099031faf5e20faefb9f61126836f0
     container_name: infradeck-caddy
     profiles: ["https"]
     restart: unless-stopped
