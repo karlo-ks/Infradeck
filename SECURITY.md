@@ -594,5 +594,8 @@ What runs on your machines is built from pinned inputs, and a release can't be s
 
 ## Reporting a vulnerability
 
-Please open a private security advisory on the repository, or contact the maintainer directly,
-rather than filing a public issue.
+Please don't report security problems in a public issue or discussion.
+
+A dedicated private channel for security reports is coming soon, and this section will say how to
+use it. Until then, please email me at the address on my [GitHub profile](https://github.com/karlo-ks)
+and start the subject with `[INFRADECK]`.
