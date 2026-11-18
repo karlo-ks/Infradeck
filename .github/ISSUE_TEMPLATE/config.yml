@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature idea
+    url: https://github.com/karlo-ks/Infradeck/discussions/categories/ideas
+    about: Suggest a new feature or a change in Discussions › Ideas.
+  - name: Question or setup help
+    url: https://github.com/karlo-ks/Infradeck/discussions/categories/q-a
+    about: Ask in Discussions › Q&A.
+  - name: Security vulnerability
+    url: https://github.com/karlo-ks/Infradeck/blob/main/SECURITY.md#reporting-a-vulnerability
+    about: Please don't post details publicly. Until a private channel is ready, email the address on my GitHub profile, with [INFRADECK] at the start of the subject.

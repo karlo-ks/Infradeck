@@ -1,0 +1,66 @@
+name: Bug report
+description: Something in Infradeck doesn't work as documented.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Feature ideas and setup questions go to [Discussions](https://github.com/karlo-ks/Infradeck/discussions).
+        **Please don't post details of security problems here.** Until a private channel is ready, email the address on my GitHub profile with `[INFRADECK]` at the start of the subject; see [Reporting a vulnerability](https://github.com/karlo-ks/Infradeck/blob/main/SECURITY.md#reporting-a-vulnerability).
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected to see instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Infradeck version
+      description: Shown in Admin. Add the collector version too if it is different.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: How is the dashboard installed?
+      options:
+        - Docker Compose (docs/deployment.md)
+        - Docker Compose behind Traefik
+        - Docker Compose behind another reverse proxy
+        - Built from source
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Machine
+      description: OS and architecture of the machine where it happens (dashboard or collector).
+      placeholder: "Debian 12, arm64 (Raspberry Pi 5)"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        For example `docker compose logs backend` on the dashboard, or `docker logs infradeck-collector` on a server.
+        Remove passwords, tokens, API keys and addresses you don't want to make public before pasting.
+      render: text
